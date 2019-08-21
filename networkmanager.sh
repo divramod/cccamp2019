@@ -5,4 +5,5 @@ sudo rm -f /etc/NetworkManager/system-connections/Camp2019.nmconnection
 sudo mv Camp2019.nmconnection /etc/NetworkManager/system-connections
 sudo chmod 600 /etc/NetworkManager/system-connections/Camp2019.nmconnection
 sudo ls -lisa /etc/NetworkManager/system-connections
+sudo  systemctl restart NetworkManager.service
 echo "Finished importing camp network connection"
